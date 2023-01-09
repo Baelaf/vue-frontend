@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>index</h1>
-    <Tutorial/>
   </div>
 </template>
 
