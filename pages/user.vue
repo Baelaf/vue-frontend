@@ -1,6 +1,9 @@
 <template>
   <div>
     <p>{{ user }}</p>
+    <p>{{$store.state.user}}</p>
+    <p>{{$store.state.todoItems}}</p>
+    <button @click="displayUser">display</button>
   </div>
 </template>
 
@@ -17,6 +20,12 @@
       return {user}
       } catch(e) {
         error({ statusCode: 503, message: 'API 요청이 실패했습니다 다시 시도해 주세요' })
+      }
+    },
+    methods : {
+      displayUser() {
+        const user = {name : '넉스트'};
+        this.$store.commit('setUser', user);
       }
     }
   }

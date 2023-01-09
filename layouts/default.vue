@@ -5,7 +5,7 @@
       <NuxtLink to="/">시작</NuxtLink>
       <NuxtLink to="/login">로그인</NuxtLink>
       <NuxtLink to="/main">메인</NuxtLink>
-      <NuxtLink to="/user">메인</NuxtLink>
+      <NuxtLink to="/user">유저</NuxtLink>
     </h1>
     <Nuxt/>
   </div>
